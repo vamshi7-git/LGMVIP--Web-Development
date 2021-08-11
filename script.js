@@ -1,7 +1,6 @@
 var menu = document.querySelector("#menu-bar");
-var navbar = document.querySelector(".navbar");
+var navigationbar = document.querySelector(".navigationbar");
 
 menu.addEventListener('click', () => {
-    menu.classList.toggle("fa-times");
-    navbar.classList.toggle("active");
+    navigationbar.classList.toggle("active");
 });
