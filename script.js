@@ -1,4 +1,4 @@
-ar menu = document.querySelector("#menu-bar");
+var menu = document.querySelector("#menu-bar");
 var navbar = document.querySelector(".navigationbar");
 
 menu.addEventListener('click', () => {
