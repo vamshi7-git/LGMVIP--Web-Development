@@ -75,17 +75,17 @@ header{
 .header .nav .logo:hover{
     color: orange;
 }
-.header .nav .navbar{
+.header .nav .navigationbar{
     margin: auto 0;
 }
-.header .nav .navbar a{
+.header .nav .navigationbar a{
     margin-left: 3rem;
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
     text-transform: uppercase;
 }
-.header .nav .navbar a:hover{
+.header .nav .navigationbar a:hover{
     color:orange;
 }
 .header .nav #menu-bar{
@@ -183,52 +183,20 @@ header{
     text-align: center;
 }
 
-.home .flt{
+.home .about{
     margin: 2rem 0;
 }
-.home .flt .txt{
+.home .about .txt{
     float: center;
     width: 100%;
 }
-.home .flt .txt p{
+.home .about .txt p{
     font-size: 2.5rem;
     text-align: justify;
 }
-.home .flt .simg{
-    float: right;
-    width: 30%;
-    text-align:end
-}
-.home .flt .simg i{
-    font-size: 24rem;
-    color: #1E90FF;
-    animation-name: change-color;
-}
 
-@keyframes change-color{
-    0%{
-        color: grey;
-        transform: rotate(0deg);
-    }
-    25%{
-        color: blue;
-        transform: rotate(90deg);
-    }
-    50%{
-        color: red;
-        transform: rotate(180deg);
-    }
-    75%{
-        color: black;
-        transform: rotate(270deg);
-    }
-    100%{
-        color: gray;
-        transform: rotate(360deg);
-    }
-}
 
-.home .flt::after{
+.home .about::after{
     content: "";
     display: block;
     clear: both;
@@ -303,6 +271,7 @@ header{
 .project .projects .pro .contents h2{
     margin-left: 7%;
     font-size: 2.3rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
 }
 .project .projects .pro .contents p{
@@ -315,13 +284,6 @@ header{
     bottom: 20%;
     color: black;
     background-color:orange;
-}
-.project .projects .pro .contents:hover{
-    background-color: #FFC0CB;
-}
-.project .projects .pro .contents a:hover{
-    background-color: yellow;
-    color: black;
 }
 
 
@@ -492,25 +454,8 @@ header{
     cursor: pointer;
     position: relative;
 }
-.teams .team .member .links{
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.teams .team .member .links i{
-    margin: 0 1.5rem;
-    display: none;
-    color: rgb(255, 255, 255);
-}
 .teams .team .member h3{
     color: rgba(0, 0, 0, 0.76);
-}
-.teams .team .member img:hover ~ .links i,.teams .team .member img:hover{
-    display: inline;
-    filter: saturate(0%);
 }
 
      /*--------------------------------- end of Team Section Styling ----------------  */
@@ -738,7 +683,7 @@ header{
     html{
         font-size: 50%;
     }
-    .header .nav .navbar a{
+    .header .nav .navigationbar a{
         margin-left: 2rem;
     }
     .project .projects{
@@ -758,26 +703,26 @@ header{
     .header .nav #menu-bar{
         display: initial;
     }
-    .header .nav .navbar{
+    .header .nav .navigationbar{
         position: absolute;
         top: 110%;
         left: 0;right: 0;
-        background-color: blueviolet;
+        background-color: white;
         padding: 0.5rem 0.5rem;
         border: 3px solid black;
         display: none;
     }
-    .header .nav .navbar a{
+    .header .nav .navigationbar a{
         font-size: 1.6rem;
         width: 10rem;
         text-align: center;
-        background-color: yellow;
+        background-color: orange;
         padding: 0.7rem;
         margin: 1rem auto;
         position: relative;
         border: 2px solid black;
     }
-    .header .nav .navbar.active{
+    .header .nav .navigationbar.active{
         display: initial;
         display: flex;
         justify-content: space-between;
@@ -786,14 +731,7 @@ header{
         position: relative;
         top: 5rem;
     }
-    .home .flt .txt,.home .flt .simg{
-        float: none;
-        display: block;
-        margin: 1rem auto;
-    }
-    .home .flt .simg{
-        display: none;
-    }
+
     .home .boxs{
         flex-wrap: wrap;
     }
@@ -819,22 +757,22 @@ header{
     html{
         font-size: 40%;
     }
-    .header .nav .navbar{
+    .header .nav .navigationbar{
         position: absolute;
         top: 110%;
         left: 0;right: 0;
-        background-color: yellow;
+        background-color: white;
         padding: 1rem 1rem;
         display: none;
     }
-    .header .nav .navbar a{
+    .header .nav .navigationbar a{
         font-size: 1.5rem;
         width: 10rem;
-        background-color: blueviolet;
+        background-color:orange;
         padding: 1rem;
         position: relative;
     }
-    .header .nav .navbar.active{
+    .header .nav .navigationbar.active{
         display: initial;
         display: grid;
         grid-template-columns: 15rem 15rem 15rem;
